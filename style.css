@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(143, 168, 168);
+    font-family: 'Rubik', sans-serif;
+}
+main{
+    margin: 4rem;
+    height: 90vh;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin: 3rem;
+}
+.digital{
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: .5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding: 1rem;
+}
+.analog{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid linear-gradient(70deg, black, gray);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #171612, inset 0 0 10px #F0BF67, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.clock-face{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+.hand{
+  width: 50%;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand{
+  height: 9px;
+
+}
+.min-hand{
+  height: 3px;
+}
+.second-hand{
+  background: white;
+  height: 4px;
+}
+
